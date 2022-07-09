@@ -1,0 +1,111 @@
+*{ box-sizing: border-box; }
+.title{font-family: cursive; font-size: 300%; background-color:black; border: 1; border-color:white; }
+.intro{font-size: 30px; backgroun-color: purple;}
+.subtitle{font-size: 0.8cm; text-align: right;}
+#name1{text-shadow: -10px 0px 2px red;}
+#name2{text-shadow: 0px -10px 2px red;}
+#name3{text-shadow: -10px 10px 2px red;}
+#name4{text-shadow: 10px -10px 2px red;}
+#name5{text-shadow: -10px -10px 5px red;}
+.box1, .box2{background-color: purple; height: 100px; width: 200px; box-shadow: 5px 5px 10px black;}
+.box2{box-shawdow: 0px 0px 10px 10px black;}
+.box3, .box4, .box5, .box6, .box7, .box8{width: 200px; height: 100px;}
+.box3{background-color: yellow; margin-bottom: 50px}
+.box4{background-color: green; margin-left: 100px}
+.box5{background-color: lightblue; margin: auto;}
+.box6{background-color: gray; margin: 100px}
+.box7{background-color: orange; margin: 100px 300px}
+.box8{background-color: yellow; margin: 200px 100px 300px 50px}
+
+/*-----Padding----*/
+.p1{padding-top: 50px;}
+.p2{padding: 20px 100px;}
+.p3{padding-top: 50px;}
+.p4{padding: 20px 50px 100px 30px;}
+/*----Layout---*/
+.nature{background-color: lightgreen;font-size: 300%; text-align: center; padding: 20px 0px;text-shadow: 2px 2px 5px orange; width: 90%; margin: auto; box-shadow: 2px 2px 5px black; color: darkgreen;}
+.img_container{
+  border: solid 1px red; width: 90%; margin: auto; margin-top: 2em;
+}
+.image1 .image2 .image3 .image4{width: 45%; height: 45% margin: 2%}
+.row1, .row2{border:solid green;}
+.image1{border-radius: 20px;}
+.image2{border-radius: 50%;}
+.image3{border-radius: 20px darkgreen; padding: 10px; background-color: pink;}
+.image4{border-radius: 0px 0px 10px 5px brown;}
+
+.pcontent{border: solid yellow; width: 50%; float: right; pading: 1em 2em;}
+.contact{border: solid gray; background-color: gray; display: inline-block; width: 100%;}
+.contact1, .contact2, .contact3{border:solid red; width: 30%; float:left; margin-left: 3%; padding: 1em 2em;}
+
+.g1, .g2, .g3, .g4, .g5, .g6{font-size: 5em; font-family: "Arial Black"}
+.g1, .g4{color:rgb(66,133,224);}
+.g2, .g6{color:rgb(234,67,53)}
+.g3{color:rgb(251,188,5)}
+.g5{color:rgb(52,168,83)}
+
+.c1, .c2, .c3, .c4{font-size:  2em; padding: 1em;}
+.c1{background-color: #fff6a1}
+.c2{background-color: #cbc271}
+.c3{background-color:#ffffd3}
+.c4{background-color: #95fbff}
+
+.photo_container{
+  border: ridge 20px gray;
+  width: 50%;
+  margin auto;
+  position: relative;
+}
+.photo_container img{width: 100%;}
+
+.photo_p1{text-align: center; justify-content: center;font-size: 2em; color: darkred; position: absolute; top:0% left: 10%; right:10%; background-color: rgba (234,67,53,0.6; box-shadow: 2px 2px 5px white;)}
+.photo_p2{position: center; justify-content: center; background-color: rgba(10,10,10,0.8); top:30%; bottom: 30% left: 30% right: 200% color: lightgray;}
+.link_p2{display: block; justify-content: center;  background-color: magenta; margin-top: 1em; padding: 0.2em; border-radius: 12px; text-decoration: none;}
+.link_p2:hover{justify-content: center; background-color: lightblue; box-shadow: 0px 0px 5px 2px gray;}
+
+/*----filters---*/
+.blur1, .blur2, .blur3, .sepia1, .sepia2, .sepia3, .invert1, .invert2, .invert3{width: 30%; margin-left:2%;}
+.blur1{filter: blur(2px);}
+.blur2{filter: blur(10px);}
+.blur3{filter: blur(15px);}
+.sepia1{filter: sepia(10%);}
+.sepia2{filter: sepia(60%);}
+.sepia3{filter: sepia(90%);}
+.invert1{filter: invert(10%);}
+.invert2{filter: invert(60%);}
+.invert3{filter: invert(90%);}
+
+.Animation_container{
+  border: ridge 20px gray;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2em;
+  position: relative;
+}
+.mountain{width: 100%}
+.bus{width: 30%; position: absolute; bottom: 40%; right: -20%; animation-name: moveBus; animation-duration: 2s;
+animation-delay: 3s;animation-iteration-count: 2; animation-fill-mode: both; animation-direction: alternate-reverse;}
+@keyframes moveBus {
+
+  from{transform: translateX(0%);}
+  to{transform: translateX(-200%);}
+
+}
+.ball{width: 30%; position: absolute; bottom: 40%; right: -70%; animation-name: moveBall; animation-duration: 2s;
+animation-delay: 3s;animation-iteration-count: 2; animation-fill-mode: both; animation-direction: alternate-reverse; }
+@keyframes moveBall {
+
+  from{transform: rotate(0deg);left: -10%);}
+  to{transform: rotate(700deg);left: :-100%);}
+
+}
+.cloud1, .cloud2, .cloud3{position: absolute;}
+.cloud1{width: 20%; top:0%; left:-20%; animation: moveCloud 15s infinite;}
+.cloud2{width: 20%; top:40%; left:40%; animation: moveCloud 30s infinite;}
+.cloud3{width: 20%; top:-10%; left:40%; animation: moveCloud 22s infinite;}
+@keyframes moveCloud {
+  0%{opacity: 0.8; transform: translate(0,0);}
+  20%{opacity: 1;}
+  40%{opacity: 0.5; transform: translate(300%,50%);}
+  80%{opacity: 0.7;}
+  100%{opacity: 0.5; transform: translate(700%,-10%);}
