@@ -19,7 +19,7 @@
 
 }
 
-.ball{width: 70%; position: absolute; bottom: 40%; right: 70%; animation-name: moveBall; animation-duration: 10s;
+.ball{width: 90%; position: absolute; bottom: 40%; right: -40%; animation-name: moveBall; animation-duration: 10s;
 animation-delay: 3s;animation-iteration-count: 2; animation-fill-mode: both; animation-direction: alternate-reverse; }
 @keyframes moveBall {
 
