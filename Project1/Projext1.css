@@ -1,0 +1,6 @@
+.box3 img {
+    object-fit: fill;
+    box-shadow: 5px 5px 10px black;
+    height: 100px; width: 200px;
+}
+   
