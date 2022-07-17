@@ -1,0 +1,165 @@
+!<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ACTIVITY 8</title>
+  </head>
+  <body>
+    <h1> GAVIN LOWENFIELD ACTIVITY 8</h1>
+    <script type="text/javascript">
+
+      // example 1) without parameters or return value
+      function msg(){
+        console.log("hello");
+
+      }
+      function printCount(){
+        for(let i=3; i>=1; i-=1){
+          console.log(i)
+        }}
+        function greeting(nane){
+          console.log(`Helllo ${name}`);
+        }
+function upperMessage(message){
+  let upper = toUpperCase();
+  console.log(upper);
+}
+
+function greet(firstName, lastName){
+  console.log(`Hello ${firstName} ${lastName[0].toUpperCase}`);
+}
+function printMsg(message, numCount){
+  for(counter=0; counter<numCount; counter++){
+    console.log(`Counter ${counter}=${counter}`);
+  }}
+
+  function isSnakeEyes(dice1, dice2){
+    if(dice1===1 && dice2===1){
+      console.log(`snake eyes!`);
+    }
+    else {
+      console.log(`not snake eyes`);
+    }
+  }
+
+function sumXY(){
+  let x=7, y=-3
+  return x+y
+  console.log(`hello world`);
+}
+let userNum = parseInt(prompt(`enter a number`))
+function doubleNumber(number){
+  let dNumber = number*2;
+}
+let collectNum = doubleNumber(userNum)
+
+let a=5/6, b=3,c=9,d=-5
+function sumNum(num1,num2){
+  let sum = num1+num2
+  return sum
+}
+let number1 = sumNum(10,d)
+let number2= sumNum(a,c)
+
+function isShortsWeather(temperature){
+  if(temperature>=78){return ture;}
+  else{return false;}
+}
+
+function lastElement(arrayInput){
+  if (arrayInput === undefined) {return null}
+  else if(arrayInput.length !==0){
+    let lastIndex = arrayInput.length - 1;
+    return arrayInput[lastIndex]
+  }
+  else {return null}
+
+  }
+    let numPI = Math.PI;
+    console.log(`PI value = ${numPI}`);
+
+    console.log(`PI with Math.round()=${Math.round(numPI)}`);
+    console.log(`PI with Math.celi()=${Math.ceil(numPI)}`);
+    console.log(`PI with Math.floor()=${Math.floor(numPI)}`);
+    console.log(`PI with Math.trunc()=${Math.trunc(numPI)}`);
+    console.log(`PI with Math.pow(base,exponet)=${Math.pow(2,3)}`);
+    console.log(`PI with Math.srt()=${Math.round(85)}`);
+    console.log(`PI with Math.random()=${Math.random()}`);
+
+
+function pickNum(){
+  let pick = 10 + Math.round(Math.random()*10)
+  return pick
+}
+let colors= [`red`,`green`,`blue`,`yellow`,`orange`]
+function colorPick(lastIndex){
+  let pick = Math.round(Math.random()*lastIndex)
+  return pick
+}
+pickedIndex = colorPick(colors.length-1)
+console.log(`The picked color is ${colors[pickedIndex]}`);
+
+
+  function checkName(){
+let validName = null;
+
+while(validName === null || !isNaN(validName)){
+  validName =prompt("Please enter ur name")
+  if (validName === null){
+  validName = prompt("You forgot to enter a name. Enter a name again:")
+ console.log(`Welcome ${validName} to the class`);}
+  else if (!isNaN(validName)) {
+    validName = prompt(`${validName}is invalid! Enter a name again:`)
+     console.log(`Welcome ${validName} to the class`);
+  }
+  else {
+   console.log(`Welcome ${validName} to the class`);
+  }
+  }
+}
+function checkNum(){
+
+let userInput = null;
+
+while(userInput === null || isNaN(userInput)){
+userInput =prompt("Please enter ur number")
+if (userInput === null){
+userInput = prompt("You forgot to enter a number. Enter a number again:")
+if (userInput%2==0){console.log(true); }else { console.log(false);
+
+
+}}
+
+else if (isNaN(userInput)) {
+  userInput = prompt(`${userInput}is not a number! Enter a number again:`)
+  if (userInput%2==0){console.log(true); }else { console.log(false);
+
+}}
+
+else if (userInput%2==0) {
+ console.log(true);
+}
+else {
+  console.log(false);
+}
+
+}}
+
+
+function lottory(j){
+
+   for (var i = 0; i < j; i++) {
+      let randomArray=Array.from({length: 5}, () => Math.floor(Math.random() * 100));
+    console.log(randomArray);
+   }
+
+  }
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

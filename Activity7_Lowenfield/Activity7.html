@@ -1,0 +1,128 @@
+!<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> GAVIN LOWENFIELD ACTIVITY 7</h1>
+    <script type="text/javascript">
+
+/*
+      //example 1 use loop ot print a countter
+      from 0 to 4
+      console.log(`the curret i is 0`);
+      console.log(`the curret i is 1`);
+      console.log(`the curret i is 2`);
+      console.log(`the curret i is 3`);
+      console.log(`the curret i is 4`);
+*/
+/*
+      for(let counter = 0; counter<=10; counter +=5){
+        console.log(`the current counter is ${counter}`);
+      }
+// example 2 write a JS code that uses a loop to print even numbers between 0 and 100
+for(let num; num<100; num++){
+  if(num%2===0){
+    console.log(num);
+  }
+}
+*/
+/*
+for(let num = 100; num>=0; num -= 10){
+  console.log(num);
+}
+
+let cars =[`Mazda`,`Tesla`, `Dodge`,`BMW`, `Porshe`]
+for (var i = 0; i < cars.length; i++) {
+  console.log(`Car ${i+1} = ${cars[i]}`);
+}
+//exple 5 use a for loop to print each character
+let cars =[`mazda`,`Tesla`,`Dodge`,`BMW`, `Porshe`]
+for(let eachCar of cars){
+  console.log(eachCar);
+}
+
+let myString = `World!`
+for(let eachLetter){
+  console.log(eachLetter);
+}
+*/
+/*
+// example 7 i want some______. All even foods wiill be uppercase
+let foods = [`salad`, `pizza`, `tofu`, `cheese burger`]
+for (var item = 0; item < foods.length; item++) {
+  if((item+1)%2===0){
+    let itemUpper = foods[item].toUpperCase();
+    console.log(`I want some ${itemUpper}`);
+
+  }
+  else {
+    console.log(`I want some ${food[item]}`);
+  }
+}
+*/
+/*
+//example 8 write a JS code that will print a decernment form 30 to 0
+for(let outerCounter = 1; outerCounter<= 5; outerCounter++){
+  console.log(`OUTER LOOP COUNT \t \t \t ${outerCounter}`);
+for(let innerCounter = 30; innerCounter>=0; innerCounter-= 10){
+console.log(`innerCounter = ${innerCounter}`);
+}
+}
+// example 9 use wile loop to display number from 0 to 4
+let initial = 0;
+while(initial<=4){
+  console.log(`The current count = ${initial}`);
+  initial++
+}
+
+const SECRET = 8;
+let numberUser = parseInt(prompt("enter a number between 0 and 10"))
+
+while(numberUser !==SECRET){
+  numberUser = parseInt(prompt("Wrong a number between 0 and 10"))
+}
+
+for(let counter = 20; counter>= 0; counter--){
+  if (counter===9) {
+    break
+
+  }
+  console.log(`counter= ${counter}`);
+}
+// example 12 create a JS code that will skip  numbers
+let userPick = parseInt(prompt()
+*/
+let numberUser = prompt("enter a number between 0 and 10")
+let checkInput =parseInt(numberUser);
+if (numberUser > 0 && numberUser < 10 ) {
+  console.log( `you entered ${numberUser}`);
+}
+else if (numberUser>10) {
+  while(numberUser>10){
+    numberUser = parseInt(prompt(`${numberUser} is greater than 10. Enter a number less than 10`))}
+      console.log( `you entered ${numberUser}`);}
+
+else if (numberUser<0) {
+    while(numberUser<0){
+    numberUser = parseInt(prompt(`${numberUser} is less than 1. Enter a number greater than 1`))
+      console.log( `you entered ${numberUser}`);}}
+
+
+else {
+  numberUser = parseInt(prompt(`${numberUser} is not a number. Enter a number again!`))
+    console.log( `you entered ${numberUser}`);}
+
+
+
+  for(numberUser; numberUser< 21; numberUser++){
+  console.log(`innerCounter = ${numberUser}`);
+
+
+
+}
+    </script>
+
+  </body>
+</html>
