@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+<button type="button" id="cat" onclick="catFacts();">Click for cat facts!</button> <button type="button" onclick="reloadPage()">clear</button> <br>
+<span id="fact"></span>
+
+
+
+    <script type="text/javascript">
+
+      function catFacts(){
+      fetch("https://catfact.ninja/fact")
+      .then((res)=>{
+        console.log('LOADED!: using fetch', res)
+        res.json().then((data)=>document.getElementById('fact').innerHTML = (data.fact))
+
+
+
+      })}
+
+function reloadPage()
+{
+location.reload();
+}
+
+
+    </script>
+  </body>
+</html>

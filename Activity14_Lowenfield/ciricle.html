@@ -1,0 +1,43 @@
+
+<html>
+<head>
+  	
+</head>
+<body>
+  	<div onmouseover="randomColor(this);ClickCounter();"><p>hover number</p><p id="count"></p></div>
+<p>hllo</p>
+
+  <script type="text/javascript">
+    	randomColor = function(e) {
+			e.style.background =  "#" + (Math.random()	* 0xFFFFFF<<0).toString(16);
+		}
+		
+		  	var click = 0;
+				   function ClickCounter()
+				   {
+		
+					 click++;
+					 document.getElementById('count').innerHTML = click;
+		
+				   }
+		
+  </script>
+
+  <style type="text/css">
+    	div {
+		    width:200px; height: 200px;background-color:purple; padding:3em text align: center; border-radius:50%;margin: auto;  font-size:1.1em;
+		}
+		div p{
+		  text-align: center;
+		vertical-align: middle;
+		line-height: 90px; 
+		}
+		div span{
+		    text-align: center;
+		vertical-align: middle;
+		line-height: -200px;
+		font-size: 100px;
+		}
+  </style>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+/*Forms*/
+.input
+/*slideshow*/
+.container_slideshow{
+  border: solid red;
+  width: 80%;
+  margin: 2em auto;
+  overflow:hidden;
+  position:relative;
+}
+#item1{display:block; {padding: 0.5em; color:black; background-color: orange;
+   text-allign:center;}
+   #item1:hover{background-color: darkgray;}
+   .modalWindow{ background-color: rgba(50,50,50,0.6); position: fixed;
+   top:0%; bottom: 0%; left:0%; right: 0%; display: none;}
+   .modalbody{width: 60%; height: 500px; margin: 5% auto;background: white;}
+   .modalHeader{height: 10%; background-color: orange; padding:0.5em;}
+   .modalHeader{height: 70%; padding: 0.5em}
+   .modalFooter{height: 20%; background-color: orange; padding:0.5em;}
+
+
+
+.slide, .slideAuto{
+  border:solid green;
+  width: 100%;
+  display: none;
+}
+@keyframes slideAnimation {
+  0%{transform: translateX(50px);}
+  100%(transfrom: translate(0px);}
+
+}
+.slide a , .slideAuto img{
+  width: 100%;
+  vertical-align: middle;
+}
+.slide p,.slideAuto p{
+  position: absolute;
+  left: 10%;
+  right:10%;
+  bottom: -10%;
+
+}
+
+.prev,.next{
+  position: absolute;
+  top: 40%;
+  color: gray;
+  font-size: 3em;
+display:inline-block;
+padding: 0.5em, 1em;
+}
+.prev{
+  left:2%;
+}
+.left{
+  right:2%;
+}
+.prev:hover, .next:hover{
+  background-color: rgba(220, 220, 220, 0.8);
+}
+
+.container{
+  border: solid gray;
+  width: 100%;
+  height: 200px;
+  box-shadow: 1px 1px 5px gray;
+  margin-bottom: 3em;
+}
+.title{
+  border:solid red;
+  width: 100%;
+  height: 20%;
+}
+.intro{
+  border:solid green;
+  width: 65%;
+  height: 80%;
+  margin-left: 2%;
+  float: left;
+}
+.footer{
+  width: 32%;
+  height: 80%;
+  border:solid blue;
+  float: left;
+}
+/* card ACTIVITY*/
+.mainTitle{
+  text-align: center; color: orange; padding: 1em;
+}
+.cardContainer{
+  width: 100%; display:inline-block;
+}
+.nav{
+  width: 100%;
+  background-color: orange;
+  height: auto;
+}
+.nav a{
+  background-color: orange;
+  width:32.8%;
+  padding: 1em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: darkblue;
+
+}
+.nav a:hover{background-color: blue; color: orange;}
+
+.card{
+  border: gray solid;
+  box-shadow: 1px 1px 3px gray;
+  width: 23.7%;
+  margin-left: 1%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+
+
+}
+.card img{
+  width: 100%;
+  height: 45%;
+}
+.card h3{
+  text-align: center;
+  padding: 0.5em;
+  color: orange;
+}
+
+.card p{
+  padding:0.5em;
+}
+@media only screen and (max-width:600px){
+  .nav a, .card{
+    width: 80%;
+    margin-left: 10%
+  }
+
+
+
+}
+@media only screen and (max-width: 800px) {
+  body{background-color: pink;}
+  .card{height: 500px;}
+  .title{height: 10%; font-size: 3em; overflow: hidden; color: purple;}
+  .intro{height: 50%; width: 100%;}
+  .footer{width: 100%; height: 42%;}
+
+  .nav a{
+    width: 32%
+  }
+  .card{
+    width:47.5%;
+    margin-top: 2em;
+    margin-left: 2%;
+  }
+
+}

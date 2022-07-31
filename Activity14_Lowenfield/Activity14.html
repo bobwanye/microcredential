@@ -1,0 +1,210 @@
+!<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!---BOOTSTRAP BUT FOR JAVASCRIPT-->
+    <title>Activity 14: jQuery</title>
+    <style media="screen">
+      *{box-sizing:border-box}
+      .pBackground{color: orange; background-color: orange;}
+      #addClass, #removeClass, #toggleClass{ padding: 0.5em 1em; margin: 1em; background-color:green; color:green; color:lightgray; border-radius: 12px}
+      .container{ border: insert 10px gray; width 300px; height:200px}
+      .circle{ width:200px; height: 200px;background-color:purple; padding:3em; text align: center; border-radius:50%;, margin: 3em; font-size:1.1em;}
+      .rectangle{border-radius:0%; background-color: yellow; border:10px olive;}
+    </style>
+
+
+  </head>
+
+  <body>
+    <!---ACTIVIITY 14 work squaree-->
+    <div class= square onclick="randomColor(this);ClicksCounter();"><p>click number</p><span id="counts"></span></div>
+<p>hllo</p>
+
+  <script type="text/javascript">
+      randomColor = function(e) {
+      e.style.background =  "#" + (Math.random()	* 0xFFFFFF<<0).toString(16);
+    }
+
+        var clicks = 0;
+           function ClicksCounter()
+           {
+
+           clicks++;
+           document.getElementById('counts').innerHTML = clicks;
+
+           }
+
+  </script>
+
+  <style type="text/css">
+      .square {
+       width:300px;height:270px; border-radius:0%; background-color: yellow; border:10px olive; text-align:center; position: relative;
+    }
+    div p{
+      text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    }
+    div span{
+        text-align: center;
+    vertical-align: middle;
+    line-height: -100px;
+    font-size: 100px;
+    }
+  </style>
+<!---ACTIVIITY 14 work cirlce-->
+
+<div onmouseover="randomColor(this);ClickCounter();"><p2>hover number</p2><span id="count"></span></div>
+<p>hllo</p>
+
+<script type="text/javascript">
+  randomColor = function(e) {
+  e.style.background =  "#" + (Math.random()	* 0xFFFFFF<<0).toString(16);
+}
+
+    var click = 0;
+       function ClickCounter()
+       {
+
+       click++;
+       document.getElementById('count').innerHTML = click;
+
+       }
+
+</script>
+
+<style type="text/css">
+  div {
+    width:200px; height: 200px;background-color:purple; padding:3em text align: center; border-radius:50%;margin: auto;  font-size:1.1em;
+}
+div p2{
+  text-align: center;
+vertical-align: middle;
+line-height: 90px;
+}
+div span{
+  text-align: center;
+vertical-align: middle;
+line-height: -2000px;
+font-size: 70px;
+}
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+    <div class="circle" id="circle">
+      mouse over to see the hover event. Also try to double click or resize the bowsers windows
+
+    </div>
+
+    <!---exaple of click event--->
+<button id="addclass">ADD</button>
+<button id="removeClass">REMOVE</button>
+<button id="removeClass">TOGGLE</button>
+<div class="container"></div>
+    <h1>basic jQuery selectors</h1>
+<section id="content">
+  <p>Selectors are used to seclect content in a webpage</p>
+  <p>They use CSS-like syntax</p>
+
+  <ul id="list1">
+    <li class="a">Apples</li>
+      <li class="a">Oranges</li>
+        <li class="b">Grapes</li>
+          <li class="b">Strawberries</li>
+  </ul>
+  <div id="example">
+    <p class = "a">Paragraph 1</p>
+    <p class = "para1">Paragraph 2</p>
+    <p class = "b">Paragraph 3</p>
+    <p class = "para4">Paragraph 4</p>
+    <p class = "para5">Paragraph 5</p>
+
+  </div>
+
+</section>
+  <script src="jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $(function(){
+          $('#circle').dblclick(fnDoubleClick);
+          $('#circle').hover(fnHover);
+        $(window).resize(fnResize);
+      })
+      function fnDoubleClick(){
+        $('#circle').toggleClass('rectangle')
+        $('#circle').html('<h3>double-click event</h3>')
+
+      }
+
+      function fnHover(){
+        $('#circle').toggleClass('rectangle')
+        $('#circle').html('<h3>hover events</h3>')
+      }
+
+
+      function fnResize(){
+        $('#circle').html('mouseover mouseleave', mouseEffect)
+      }
+
+
+
+      $('.container').on('mouseover mouseleave', mouseEffect)
+      function mouseEffect(){
+        $('.container').toggleClass(pBackground)
+      }
+
+$('#addClass').click(function(){
+  $('.container').addClass('pBackground')
+})
+
+
+        $('#example').before('/*/*/*/*/*/* BEFORE /*/*/*/*/*/*')
+        $('#example').after('=*=*=*=*=*=*= AFTER =*=*=*=*=*=*')
+
+        //append and preapend
+          $('#para4').prepend('NEW CONTENT!')
+        $('#para4').append('NEW CONTENT!')
+// change content of an element
+        $('#para5').html("<p>HELLO WORLD</p>")
+        // dom tree selector
+        let elem = $('#para1')
+        elem.prev().css('border','10px dotted blue')
+
+        //advance filter selector
+        $("p:contains('3')").css({'border':'gray dashed 5px', 'font-family':'monotype-corsiva'})
+
+
+        $('div>p:odd').css('background-color','orange')
+        $('ul+div').css('border','ridge olive 10px')
+        // exaple 1
+        $('#para1').css('border','solid red 3px');
+        $('.a').css({'color': 'magenta', 'padding':'0.5em 1em','background-color':'yellow'})
+
+
+
+
+
+      })
+
+    </script>
+
+  </body>
+</html>

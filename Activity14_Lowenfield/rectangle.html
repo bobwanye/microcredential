@@ -1,0 +1,43 @@
+
+<html>
+<head>
+  	
+</head>
+<body>
+  	<div class= square onclick="randomColor(this);ClickCounter();"><p>click number</p><p id="count"></p></div>
+<p>hllo</p>
+
+  <script type="text/javascript">
+    	randomColor = function(e) {
+			e.style.background =  "#" + (Math.random()	* 0xFFFFFF<<0).toString(16);
+		}
+		
+		  	var click = 0;
+				   function ClickCounter()
+				   {
+		
+					 click++;
+					 document.getElementById('count').innerHTML = click;
+		
+				   }
+		
+  </script>
+
+  <style type="text/css">
+    	.square {
+		   width:300px;height:270px; border-radius:0%; background-color: yellow; border:10px olive; text-align:center; position: relative;
+		}
+		div p{
+		  text-align: center;
+		vertical-align: middle;
+		line-height: 90px; 
+		}
+		div span{
+		    text-align: center;
+		vertical-align: middle;
+		line-height: -100px;
+		font-size: 100px;
+		}
+  </style>
+</body>
+</html>
