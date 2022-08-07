@@ -1,0 +1,64 @@
+<?php
+require("header.php")
+?>
+<link rel="stylesheet" href="contact.css">
+    <div class="contact__container">
+        <h1>Get in touch</h1>
+        <p>We would love to respond to your queries and help you.
+            <br> Feel free to get in touch with us...
+        </p>
+        <div class="content__box">
+            <div class="contact__left">
+                <h2>Send your request</h2>
+                <form action="https://formsubmit.co/89e8ec5ea69fa1bfdbc55ff8647bdef0" method="POST">
+                    <div class="input__row">
+                        <div class="input__group">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Jhon Doe" name="Name" required>
+                        </div>
+                        <div class="input__group">
+                            <label for="phoneNum">Phone</label>
+                            <input type="text" placeholder="+1 234 567 8910" name="Phone" required>
+                        </div>
+                    </div>
+                    <div class="input__row">
+                        <div class="input__group">
+                            <label for="email">Email</label>
+                            <input type="text" placeholder="JhonDoe@email.com" name="Email" required>
+                        </div>
+                        <div class="input__group">
+                            <label for="name">Subject</label>
+                            <input type="text" placeholder="Product Demo" name="Subject">
+                        </div>
+                    </div>
+                    <label >
+                        <textarea cols="30" rows="10" placeholder="Your message" name="Message"></textarea>
+                    </label>
+                    <button class="cbtn" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact__right">
+                <h2>Reach Us</h2>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>snackitnotsmackit@mail.com </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+1 234 567 8910</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>#111 9th floor, 7th ave, some place,<br>
+                            NewYork, NY, 12345 <br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+<?php
+require("footer.php")
+?>

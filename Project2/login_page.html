@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .error
+        {
+            background-color: red;
+            text-align:center;
+            padding: 0.25rem; 
+            align-items: center; 
+        }
+    </style>
+
+    <title>SnackIT</title>
+</head>
+<body>
+    
+    <div class="error">
+    <?php 
+# Script 12.1- login_page.inc.php  
+// This page prints any errors associated with logging in 
+// and it creates the entire login page, including the form. 
+// Include the header: 
+$page_title = 'Login'; 
+//include ('includes/header.html'); 
+// Print any error messages, if they exist: 
+    if (isset($errors) && !empty($errors)) 
+    {echo '<b>Error!</b></br>';
+         
+        foreach ($errors as $msg) 
+        {
+            echo " $msg &nbsp"; 
+        } 
+        
+    echo '<p>Please try again.</p>'; 
+    } // Display the form: 
+?>
+    </div>
+    <div class="container">
+        <!--sign-up-box-container--->
+        <form class="sign-up" action="login.php" method="post">
+        <!--heading-->
+            <h1 class="heading">Wellcome</h1>
+
+            <!--Email-box-->
+            <div class="text">
+                <img height="12px" src="images/email.png" />
+                <input placeholder=" Email" type="email" name="email" size="20" maxlength="60" />
+            </div>
+            <!--Password-box-->
+            <div class="text">
+                <img height="20px" src="images/password.png" />
+                <input placeholder=" Password" type="password" name="pass" size="20" maxlength="20"/>
+            </div>
+            <!--button-->
+            <button type="submit" name="submit">Log In</button>
+            <!--sign-in-->
+            <p class="conditions">Don't have an account <a href="register.php">Sign up</a></p>
+        </form>
+        <!--text-container-->
+        <div class="text-container">    
+            <div class="con">
+                <h1 style="color: #131313; font-family: arial; line-height: 20px;">SnackIT</h1>
+                <p>Fill in your information to log in</p>
+            </div>       
+            <img src="images/p.svg" alt="image">
+        </div>
+        </div>
+    </div>
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+</body>
+</html>
